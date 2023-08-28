@@ -25,7 +25,9 @@ let package = Package(
             name: "TestSPMModule",
             dependencies: [
                 "Alamofire",
-            ]),
+            ],
+            path: "TestSPMModule/Sources"
+        ),
         .target(name: "Log",
                 path: "Log/Sources"),
     ]
