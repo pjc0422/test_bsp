@@ -10,6 +10,7 @@ let package = Package(
         .library(
             name: "TestSPMModule",
             targets: ["TestSPMModule"]),
+        .library(name: "Log", targets: ["Log"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -25,8 +26,7 @@ let package = Package(
             dependencies: [
                 "Alamofire",
             ]),
-        .testTarget(
-            name: "TestSPMModuleTests",
-            dependencies: ["TestSPMModule"]),
+        .target(name: "Log",
+                path: "Log/Sources")
     ]
 )
