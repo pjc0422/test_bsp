@@ -25,8 +25,5 @@ let package = Package(
             dependencies: [
                 "Alamofire",
             ]),
-        .testTarget(
-            name: "TestSPMModuleTests",
-            dependencies: ["TestSPMModule"]),
     ]
 )
