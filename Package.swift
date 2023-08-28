@@ -27,6 +27,6 @@ let package = Package(
                 "Alamofire",
             ]),
         .target(name: "Log",
-                path: "Log/Sources")
+                path: "Log/Sources"),
     ]
 )
